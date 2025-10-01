@@ -31,13 +31,13 @@ This program allows you to **add, view, and calculate total expenses** with ease
 
 ## 🚀 How to Run
 1. Clone this repository  
-
-   git clone https://github.com/Snap-1423/Expense-Tracker.git
+ git clone https://github.com/Snap-1423/Expense-Tracker.git
 Navigate into the project folder
 
 cd Expense-Tracker
 
-Run the Python program
+Run the Python program:
+
 python main.py
 
 ---
