@@ -44,7 +44,7 @@ def total_expenses():
         for row in reader:
             if row: # avoids the empty line
                 total+= int(row[2])
-    print(f"total expenses: {total}\n")
+    print(f"total expenses💰: {total}\n")
 
 total_expenses()
 
@@ -66,10 +66,10 @@ while True:
         case 3:
             total_expenses()
         case 4:
-            print("Exiting.......Goodbye")
+            print("Exiting.......Goodbye👋👋")
             break
         case _ :
-            print("Invalid choice, try again\n")
+            print("Invalid choice, try again!\n")
 
 
 
