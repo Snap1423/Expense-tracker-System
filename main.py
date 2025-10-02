@@ -48,6 +48,23 @@ def total_expenses():
 
 total_expenses()
 
+# To add category 
+
+def add_category():
+    category = input("Enter a Category to filter (Food/Travel/Shopping/Others): ")
+    found = False
+    with open(FILENAME,'r') as f:
+        reader = csv.reader(f)
+        next(reader) #Skips the header
+        for row in reader:
+            if row in row[1].lower()== category.lower():
+                print(row)
+                found = True
+    if not found:
+        print(f"No expense found in category: {category}")
+        
+        
+
 # Menu function
 
 while True:
