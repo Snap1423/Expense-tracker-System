@@ -20,7 +20,7 @@ def add_expenses():
     with open(FILENAME,'a',newline="")as f:
         writer = csv.writer(f) 
         writer.writerow([Date, Category, Amount, Description])
-print("Add Your Expenses👇")
+print("Added Expenses!✅")
 
 add_expenses()
 

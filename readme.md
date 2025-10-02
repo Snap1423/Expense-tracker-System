@@ -8,7 +8,8 @@ This program allows you to **add, view, and calculate total expenses** with ease
 ## 📌 Features
 - ✅ Add expenses with **date, category, amount, and description**  
 - ✅ View all your expenses in a clean tabular format  
-- ✅ Get the **total of all expenses** instantly  
+- ✅ Get the **total of all expenses** instantly 
+- ✅ **Filter expenses** by category (e.g., only Food or Travel) 
 - ✅ Data is stored in a **CSV file (Expense.csv)** for persistence  
 - ✅ Simple **menu-based CLI** with options  
 
@@ -67,13 +68,25 @@ Option 4 → Exit the program
 1. Add Expenses
 2. View Expenses
 3. Show Total Expenses
-4. Exit
+4. Filter by Category
+5. Exit
 
-Enter a choice between 1 to 4: 1
+## Adding an Expense
+Enter a choice between 1 to 5: 1
 Category (Food🍜/Travel✈️/Shopping🏬/Others): Food
 Enter the amount💵: 200
 Description📄: Lunch at cafe
 Added Expenses!✅
+
+## Viewing Expenses
+['Date', 'Category', 'Amount', 'Description']
+['2025-10-02', 'Food', '250', 'Lunch with friends']
+['2025-10-02', 'Travel', '100', 'Bus ticket']
+
+## Filtering by Category (Food)
+Expenses in category: food
+['2025-10-02', 'Food', '250', 'Lunch with friends']
+Total in category 'food': 250
 
 ---
 
