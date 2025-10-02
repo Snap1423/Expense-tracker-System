@@ -48,21 +48,23 @@ def total_expenses():
 
 total_expenses()
 
-# To add category 
+# To Filter category 
 
-def add_category():
+def filter_category():
     category = input("Enter a Category to filter (Food/Travel/Shopping/Others): ")
     found = False
     with open(FILENAME,'r') as f:
         reader = csv.reader(f)
         next(reader) #Skips the header
         for row in reader:
-            if row in row[1].lower()== category.lower():
+            if row and row[1].lower()== category.lower():
                 print(row)
                 found = True
     if not found:
         print(f"No expense found in category: {category}")
-        
+
+
+filter_category()
         
 
 # Menu function
@@ -72,9 +74,10 @@ while True:
     print("1. Add Expenses")
     print("2. View Expenses")
     print("3. Show Total Expenses")
-    print("4. Exit")
+    print("4. Filter Category")
+    print("5. Exit")
 
-    choice = int(input("Enter a choice between 1 to 4: "))
+    choice = int(input("Enter a choice between 1 to 5: "))
     match choice:
         case 1:
             add_expenses()
@@ -83,8 +86,9 @@ while True:
         case 3:
             total_expenses()
         case 4:
-            print("Exiting.......Goodbye👋👋")
-            break
+            filter_category()
+        case 5:
+            print("Exiting.......Goodbye!")
         case _ :
             print("Invalid choice, try again!\n")
 
